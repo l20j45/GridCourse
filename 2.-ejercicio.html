@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    
+    body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    }
+    
+    .grid-container{
+      height: 440px;
+      width: 440px;
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 200px 200px;
+      background-color: #3a630d;
+      gap: 40px;
+    }
+    
+    .item{
+      background-color: #add901;
+      display: grid;
+      place-items: end;
+    }
+    
+    .item span{
+      height: 100px;
+      width: 75px;
+      background-color: #62a81e;
+    }
+    
+    .item-center{
+      position: absolute;
+      display: block;
+      background-color: #203205;
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+    }</style>
+</head>
+<body>
+        <div class="grid-container">
+            <div class="item"><span></span></div>
+            <div class="item"><span></span></div>
+            <div class="item"><span></span></div>
+            <div class="item"><span></span></div>
+            <div class="item-center"></div>
+        </div>
+</html> 
